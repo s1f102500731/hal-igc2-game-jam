@@ -24,4 +24,7 @@ public class Lifemanager : MonoBehaviour
     public void removeLife() {
         GameManager.instance.remainLives.Pop();
     }
+    public int getRemainLifeCount() {
+        return GameManager.instance.remainLives.Count;
+    }
 }
